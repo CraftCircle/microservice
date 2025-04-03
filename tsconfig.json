@@ -6,6 +6,7 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
+    "types": ["node"],
     "target": "ES2021",
     "sourceMap": true,
     "outDir": "./dist",
@@ -18,18 +19,32 @@
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false,
     "paths": {
-      "@app/prisma": [
-        "libs/prisma/src"
-      ],
-      "@app/prisma/*": [
-        "libs/prisma/src/*"
-      ],
-      "@app/common": [
-        "libs/common/src"
-      ],
-      "@app/common/*": [
-        "libs/common/src/*"
-      ]
+      "@app/common": ["libs/common/src"],
+      "@app/common/*": ["libs/common/src/*"],
+      "@app/prisma": ["libs/prisma/src"],
+      "@app/prisma/*": ["libs/prisma/src/*"],
+      "@app/auth": ["apps/auth/src"],
+      "@app/auth/*": ["apps/auth/src/*"],
+      "@app/api-gateway": ["apps/api-gateway/src"],
+      "@app/api-gateway/*": ["apps/api-gateway/src/*"],
+      "@app/users": ["apps/users/src"],
+      "@app/users/*": ["apps/users/src/*"],
+      "@app/events": ["apps/events/src"],
+      "@app/events/*": ["apps/events/src/*"],
+      "@app/posts": ["apps/posts/src"],
+      "@app/posts/*": ["apps/posts/src/*"],
+      "@app/tickets": ["apps/tickets/src"],
+      "@app/tickets/*": ["apps/tickets/src/*"],
+      "@app/upload": ["apps/upload/src"],
+      "@app/upload/*": ["apps/upload/src/*"],
+      "@app/bookings": ["apps/bookings/src"],
+      "@app/bookings/*": ["apps/bookings/src/*"],
+      "@app/notifications": ["apps/notifications/src"],
+      "@app/notifications/*": ["apps/notifications/src/*"],
+      "@app/products": ["apps/products/src"],
+      "@app/products/*": ["apps/products/src/*"],
+      "@app/payments": ["apps/payments/src"],
+      "@app/payments/*": ["apps/payments/src/*"]
     }
   }
 }

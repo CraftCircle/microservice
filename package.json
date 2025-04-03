@@ -7,6 +7,8 @@
   "license": "UNLICENSED",
   "scripts": {
     "build": "nest build",
+    "build:auth": "nest build auth",
+    "build:api-gateway": "nest build api-gateway",
     "format": "prettier --write \"apps/**/*.ts\" \"libs/**/*.ts\"",
     "start": "nest start",
     "start:dev": "nest start --watch",
@@ -32,7 +34,13 @@
     "@nestjs/platform-express": "^10.0.0",
     "@prisma/client": "^6.5.0",
     "@types/bcrypt": "^5.0.2",
+    "@types/passport-google-oauth20": "^2.0.16",
+    "@types/passport-local": "^1.0.38",
     "bcrypt": "^5.1.1",
+    "graphql": "^16.10.0",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-jwt": "^4.0.1",
+    "passport-local": "^1.0.0",
     "prisma": "^6.5.0",
     "reflect-metadata": "^0.2.0",
     "rxjs": "^7.8.1"
